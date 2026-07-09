@@ -1,6 +1,6 @@
 # 📄 Personal Resume Website
 
-🔗 **Live Demo:** https://YOUR_USERNAME.github.io/resume/
+🔗 **Live Demo:** https://manishjoshi03.github.io/resume/
 
 A simple and responsive personal resume website built using **HTML** and **CSS**.
 
