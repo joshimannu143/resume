@@ -1,142 +1,153 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background:#e9ecef;
-    padding:30px;
+body {
+    background: #e9ecef;
+    padding: 30px;
 }
 
-.resume{
-    width:900px;
-    margin:auto;
-    background:#fff;
-    display:flex;
-    box-shadow:0 0 20px rgba(0,0,0,0.15);
+main {
+    width: 900px;
+    margin: auto;
+    background: #fff;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.left{
-    width:35%;
-    background:#1f3b57;
-    color:#fff;
-    padding:25px;
+/* Left Sidebar */
+aside {
+    width: 35%;
+    background: #1f3b57;
+    color: #fff;
+    padding: 25px;
 }
 
-.photo{
-    width:160px;
-    height:160px;
-    border-radius:50%;
-    object-fit:cover;
-    display:block;
-    margin:0 auto 20px;
-    border:4px solid #fff;
+.photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px solid #fff;
 }
 
-.left h1{
-    text-align:center;
-    font-size:30px;
+header h1 {
+    text-align: center;
+    font-size: 30px;
 }
 
-.designation{
-    text-align:center;
-    margin:8px 0 20px;
-    color:#ddd;
+.designation {
+    text-align: center;
+    margin: 8px 0 20px;
+    color: #ddd;
 }
 
-.left h2{
-    margin:20px 0 10px;
-    color:#ffd166;
-    border-bottom:1px solid #ffd166;
-    padding-bottom:5px;
+aside h2 {
+    margin: 20px 0 10px;
+    color: #ffd166;
+    border-bottom: 1px solid #ffd166;
+    padding-bottom: 5px;
 }
 
-.left p{
-    margin-bottom:8px;
-    font-size:15px;
+aside p {
+    margin-bottom: 8px;
+    font-size: 15px;
 }
 
-.left a{
-    color:#fff;
-    text-decoration:none;
-    word-wrap:break-word;
-    font-size:14px;
+aside a {
+    color: #fff;
+    text-decoration: none;
+    word-break: break-word;
+    font-size: 14px;
 }
 
-.left ul{
-    padding-left:20px;
+aside ul {
+    padding-left: 20px;
 }
 
-.left li{
-    margin:8px 0;
+aside li {
+    margin: 8px 0;
 }
 
-.right{
-    width:65%;
-    padding:30px;
+/* Right Content */
+main > section {
+    width: 65%;
+    padding: 30px;
 }
 
-.right h2{
-    color:#1f3b57;
-    margin-bottom:12px;
-    border-bottom:2px solid #1f3b57;
-    padding-bottom:5px;
+main > section h2 {
+    color: #1f3b57;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #1f3b57;
+    padding-bottom: 5px;
 }
 
-.right p{
-    line-height:1.7;
-    color:#555;
-    margin-bottom:15px;
+main > section p {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
 }
 
-.right ul{
-    padding-left:20px;
-    margin-bottom:25px;
+main > section ul {
+    padding-left: 20px;
+    margin-bottom: 25px;
 }
 
-.right li{
-    margin:8px 0;
-    color:#555;
+main > section li {
+    margin: 8px 0;
+    color: #555;
 }
 
-.box{
-    background:#f7f7f7;
-    border-left:5px solid #1f3b57;
-    padding:15px;
-    margin-bottom:20px;
+/* Cards */
+.box {
+    background: #f7f7f7;
+    border-left: 5px solid #1f3b57;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
-.box h3{
-    color:#1f3b57;
-    margin-bottom:5px;
+.box h3 {
+    color: #1f3b57;
+    margin-bottom: 5px;
 }
 
-.box p{
-    margin:4px 0;
+.box p {
+    margin: 4px 0;
 }
 
-hr{
-    border:1px solid rgba(255,255,255,0.3);
-    margin:20px 0;
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
 }
 
-@media(max-width:768px){
-
-.resume{
-    width:100%;
-    flex-direction:column;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 14px;
 }
 
-.left,
-.right{
-    width:100%;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
 
-.photo{
-    width:140px;
-    height:140px;
-}
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
 
+    aside,
+    main > section {
+        width: 100%;
+    }
+
+    .photo {
+        width: 140px;
+        height: 140px;
+    }
 }
